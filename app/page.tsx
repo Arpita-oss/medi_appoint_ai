@@ -1,0 +1,51 @@
+import { DashboardShell } from "@/components/dashboard-shell"
+import { Overview } from "@/components/overview"
+import { RecentAppointments } from "@/components/recent-appointments"
+import { RecentRestockRequests } from "@/components/recent-restock-requests"
+import { WelcomeBanner } from "@/components/welcome-banner"
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
+import { Button } from "@/components/ui/button"
+import { PlusCircle } from "lucide-react"
+
+export default function Home() {
+  return (
+    <DashboardShell>
+      <div className="w-full max-w-full">
+        <WelcomeBanner />
+        <div className="mt-8 w-full">
+          <Tabs defaultValue="overview" className="w-full">
+            <div className="flex items-center justify-between w-full">
+              <TabsList className="grid w-full max-w-md grid-cols-3">
+                <TabsTrigger value="overview">Overview</TabsTrigger>
+                <TabsTrigger value="appointments">Appointments</TabsTrigger>
+                <TabsTrigger value="restock">Restock</TabsTrigger>
+              </TabsList>
+              <Button
+                size="sm"
+                className=""
+              >
+                <PlusCircle className="h-4 w-4" />
+                New Appointment
+              </Button>
+            </div>
+            <TabsContent value="overview" className="space-y-6 mt-6 w-full">
+              <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4 w-full">
+                <Overview />
+              </div>
+              <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-7 w-full">
+                <RecentAppointments className="col-span-4" />
+                <RecentRestockRequests className="col-span-3" />
+              </div>
+            </TabsContent>
+            <TabsContent value="appointments" className="mt-6 w-full">
+              <RecentAppointments className="w-full" showAll={true} />
+            </TabsContent>
+            <TabsContent value="restock" className="mt-6 w-full">
+              <RecentRestockRequests className="w-full" showAll={true} />
+            </TabsContent>
+          </Tabs>
+        </div>
+      </div>
+    </DashboardShell>
+  )
+}
