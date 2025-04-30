@@ -3,8 +3,8 @@ import { Schema, model, models } from 'mongoose'
 const AppointmentSchema = new Schema({
   date: { type: String, required: true },
   time: { type: String, required: true },
-  doctorName: { type: String, required: true },
-  patientName: String,
+  doctor_name: { type: String, required: true },
+  patient_name: String,
   phone: String,
   status: { type: String, default: 'pending' }
 }, { timestamps: true })
