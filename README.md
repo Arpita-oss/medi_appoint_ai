@@ -13,7 +13,7 @@
 
 ## ✨ Features
 
-- ☎️ Voice-based calling using Twilio
+- ☎️ Voice-based calling using Twilio **without internet**
 - 🧠 Medical query analysis with **Google Gemini**
 - 🗣️ Natural responses via **ElevenLabs TTS**
 - 🧾 Real-time transcription via **Whisper**
