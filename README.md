@@ -1,5 +1,8 @@
 # MediCall AI – Medical Voice Assistant 🤖📞
 
+![Dashboard Preview](images/dashboard.png)
+
+
 ![Project Banner](https://via.placeholder.com/800x300?text=MediCall+AI+Voice+Assistant)
 
 **MediCall AI** is a voice-enabled medical assistant powered by AI that allows users to receive preliminary health advice and book doctor appointments—**all through a simple phone call**. It uses Twilio for voice calls, Whisper for transcription, Gemini for AI medical analysis, and ElevenLabs for lifelike voice responses. It also features a **Next.js dashboard** to manage all appointments received via calls.
