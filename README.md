@@ -2,7 +2,7 @@
 
 ##Live Linnk = https://medi-appoint-ai.vercel.app/restock-requests
 
-![Dashboard Preview](images/dashboard.png)
+![Dashboard Preview](images/dashboards.png)
 
 
 ![Project Banner](https://via.placeholder.com/800x300?text=MediCall+AI+Voice+Assistant)
