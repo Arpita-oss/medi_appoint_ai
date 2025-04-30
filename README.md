@@ -1,11 +1,11 @@
 # MediCall AI – Medical Voice Assistant 🤖📞
 
-##Live Linnk = https://medi-appoint-ai.vercel.app/restock-requests
+## Live Link = https://medi-appoint-ai.vercel.app/restock-requests
 
 ![Dashboard Preview](images/dashboards.png)
 
 
-![Project Banner](https://via.placeholder.com/800x300?text=MediCall+AI+Voice+Assistant)
+![appointments](images/appointments.png)
 
 **MediCall AI** is a voice-enabled medical assistant powered by AI that allows users to receive preliminary health advice and book doctor appointments—**all through a simple phone call**. It uses Twilio for voice calls, Whisper for transcription, Gemini for AI medical analysis, and ElevenLabs for lifelike voice responses. It also features a **Next.js dashboard** to manage all appointments received via calls.
 
